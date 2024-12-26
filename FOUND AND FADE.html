@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found and Faded</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f8ff, #e6e6fa); /* Updated background color */
+            color: #444;
+        }
+
+        header {
+            background-color: #1f3a93;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px; /* Adjust the size as needed */
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        .hero {
+            background: url('bg.png') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .btn {
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+        }
+
+        .about, .collection, .contact {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        .item {
+            border: 2px solid #f1c40f;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item p {
+            padding: 1rem;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #e67e22;
+            padding: 0 1rem;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #16a085;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #138d75;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Shrad\OneDrive\Desktop\f&f\logo.png" alt="Found and Faded Logo"> <!-- Replace with correct image path -->
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Found & Faded</h1>
+            <p>Where timeless fashion meets modern flair.</p>
+            <a href="#collection" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Found & Faded is a clothing brand dedicated to creating unique, high-quality apparel that combines vintage charm with contemporary design. Our mission is to empower individuals through fashion that tells a story.</p>
+    </section>
+
+    <section id="collection" class="collection">
+        <h2>Our Collection</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="C:\Users\Shrad\OneDrive\Desktop\f&f\jacket.png" alt="Vintage Denim Jacket">
+                <p>Vintage Denim Jacket</p>
+                <p class="price">$99.99</p> <!-- Added price -->
+                <button class="btn add-to-cart">Add to Cart</button> <!-- Add to Cart button -->
+            </div>
+            <div class="item">
+                <img src="C:\Users\Shrad\OneDrive\Desktop\f&f\graphic tee.png" alt="Graphic Tee">
+                <p>Graphic Tee</p>
+                <p class="price">$29.99</p> <!-- Added price -->
+                <button class="btn add-to-cart">Add to Cart</button> <!-- Add to Cart button -->
+            </div>
+            <div class="item">
+                <img src="C:\Users\Shrad\OneDrive\Desktop\f&f\bohemian dress.png" alt="Bohemian Dress">
+                <p>Bohemian Dress</p>
+                <p class="price">$49.99</p> <!-- Added price -->
+                <button class="btn add-to-cart">Add to Cart</button> <!-- Add to Cart button -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Found & Faded. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Array to hold the cart items
+        let cart = [];
+
+        // Add event listeners to all "Add to Cart" buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemName = this.previousElementSibling.previousElementSibling.innerText; // Get item name
+                const itemPrice = this.previousElementSibling.innerText; // Get item price
+                cart.push({name: itemName, price: itemPrice});
+                alert(`${itemName} - ${itemPrice} has been added to your cart.`);
+            });
+        });
+    </script>
+</body>
+</html>
